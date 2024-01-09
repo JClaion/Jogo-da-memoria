@@ -56,5 +56,6 @@ function checkMatch(){
 
     if(document.querySelectorAll(".boxMatch").length === emojis.length){
         alert("Você venceu");
+        window.location.reload();
     }
 }
