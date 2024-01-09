@@ -34,6 +34,9 @@ function handleClick(){
     if(openCards.length < 2){
         this.classList.add("boxOpen");
         openCards.push(this);
+        if(this.classList.contains("boxMatch")){
+            this.onclick = null;
+        }
     }
 
     if(openCards.length == 2){
