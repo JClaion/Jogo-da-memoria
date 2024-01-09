@@ -34,9 +34,7 @@ function handleClick(){
     if(openCards.length < 2){
         this.classList.add("boxOpen");
         openCards.push(this);
-        if(this.classList.contains("boxMatch")){
-            this.onclick = null;
-        }
+        this.onclick = null;
     }
 
     if(openCards.length == 2){
@@ -49,10 +47,14 @@ function checkMatch(){
     if(openCards[0].innerHTML === openCards[1].innerHTML){
         openCards[0].classList.add("boxMatch");
         openCards[1].classList.add("boxMatch");
+        openCards[0].onclick = null;
+        openCards[1].onclick = null;
     }
     else{
         openCards[0].classList.remove("boxOpen");
         openCards[1].classList.remove("boxOpen");
+        openCards[0].onclick = handleClick;
+        openCards[1].onclick = handleClick;
     }
 
     openCards = [];
