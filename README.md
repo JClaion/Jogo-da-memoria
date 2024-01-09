@@ -1,5 +1,5 @@
 # Jogo-da-memoria
-Clique [aqui]() para jogar
+Clique [aqui](https://jclaion.github.io/Memory-Game/) para jogar
 
 ## Como funciona?
 
